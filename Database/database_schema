@@ -1,10 +1,11 @@
 1) CREATE database snalturalasysis;
 2) USE snalturalasysis;
-3) CREATE TABLE admin (admin_id INTEGER PRIMARY KEY, admin_name TEXT, admin_number INTEGER, admin_email TEXT, admin_department TEXT, admin_password TEXT, course_id INTEGER);
-4) CREATE TABLE course_list (course_id INTEGER PRIMARY KEY, course_name TEXT, course_duration INTEGER, course_category TEXT, number_of_users INTEGER);
-5) CREATE TABLE employee (employee_id INTEGER PRIMARY KEY, employee_name TEXT, employee_mobile_number INTEGER, employee_email TEXT, employee_age INTEGER, employee_gender CHAR, employee_nationality TEXT, employee_designation TEXT, employee_department TEXT, employee_joiningdate TEXT, course_taken INTEGER);
-6) CREATE TABLE course_details (course_id INTEGER PRIMARY KEY, employee_id INTEGER,start_date TEXT, end_date TEXT, current_progress INTEGER);
-7) show tables;   
+3) CREATE TABLE admin (admin_id INTEGER PRIMARY KEY, admin_name TEXT, admin_number INTEGER, admin_email TEXT, admin_password TEXT);
+4) CREATE TABLE trainer (trainer_id INTEGER PRIMARY KEY, trainer_name TEXT, trainer_number INTEGER, trainer_email TEXT, trainer_department TEXT, trainer_password TEXT, course_id INTEGER);
+5) CREATE TABLE course_list (course_id INTEGER PRIMARY KEY, course_name TEXT, course_duration INTEGER, number_of_users INTEGER);
+6) CREATE TABLE employee (employee_id INTEGER PRIMARY KEY, employee_name TEXT, employee_mobile_number INTEGER, employee_email TEXT, employee_age INTEGER, employee_gender CHAR, employee_nationality TEXT, employee_designation TEXT, employee_department TEXT, employee_joiningdate TEXT, course_taken INTEGER);
+7) CREATE TABLE course_details (course_id INTEGER PRIMARY KEY, employee_id INTEGER,start_date TEXT, end_date TEXT, current_progress INTEGER);
+8) show tables;   
 +---------------------------+
 | Tables_in_snalturalasysis |
 +---------------------------+
@@ -14,20 +15,31 @@
 | employee                  |
 +---------------------------+
 
-8) describe admin;
-+------------------+---------+------+-----+---------+-------+
-| Field            | Type    | Null | Key | Default | Extra |
-+------------------+---------+------+-----+---------+-------+
-| admin_id         | int(11) | NO   | PRI | NULL    |       |
-| admin_name       | text    | YES  |     | NULL    |       |
-| admin_number     | int(11) | YES  |     | NULL    |       |
-| admin_email      | text    | YES  |     | NULL    |       |
-| admin_department | text    | YES  |     | NULL    |       |
-| admin_password   | text    | YES  |     | NULL    |       |
-| course_id        | int(11) | YES  |     | NULL    |       |
-+------------------+---------+------+-----+---------+-------+
+9) describe admin;
++----------------+---------+------+-----+---------+-------+
+| Field          | Type    | Null | Key | Default | Extra |
++----------------+---------+------+-----+---------+-------+
+| admin_id       | int(11) | NO   | PRI | NULL    |       |
+| admin_name     | text    | YES  |     | NULL    |       |
+| admin_number   | int(11) | YES  |     | NULL    |       |
+| admin_email    | text    | YES  |     | NULL    |       |
+| admin_password | text    | YES  |     | NULL    |       |
++----------------+---------+------+-----+---------+-------+
 
-9) describe course_details;
+10) describe trainer;
++--------------------+---------+------+-----+---------+-------+
+| Field              | Type    | Null | Key | Default | Extra |
++--------------------+---------+------+-----+---------+-------+
+| trainer_id         | int(11) | NO   | PRI | NULL    |       |
+| trainer_name       | text    | YES  |     | NULL    |       |
+| trainer_number     | int(11) | YES  |     | NULL    |       |
+| trainer_email      | text    | YES  |     | NULL    |       |
+| trainer_department | text    | YES  |     | NULL    |       |
+| trainer_password   | text    | YES  |     | NULL    |       |
+| course_id          | int(11) | YES  |     | NULL    |       |
++--------------------+---------+------+-----+---------+-------+
+
+11) describe course_details;
 +------------------+---------+------+-----+---------+-------+
 | Field            | Type    | Null | Key | Default | Extra |
 +------------------+---------+------+-----+---------+-------+
@@ -38,18 +50,17 @@
 | current_progress | int(11) | YES  |     | NULL    |       |
 +------------------+---------+------+-----+---------+-------+
 
-10) describe course_list;
+12) describe course_list;
 +-----------------+---------+------+-----+---------+-------+
 | Field           | Type    | Null | Key | Default | Extra |
 +-----------------+---------+------+-----+---------+-------+
 | course_id       | int(11) | NO   | PRI | NULL    |       |
 | course_name     | text    | YES  |     | NULL    |       |
 | course_duration | int(11) | YES  |     | NULL    |       |
-| course_category | text    | YES  |     | NULL    |       |
 | number_of_users | int(11) | YES  |     | NULL    |       |
 +-----------------+---------+------+-----+---------+-------+
 
-11) describe employee;  
+13) describe employee;  
 +------------------------+---------+------+-----+---------+-------+
 | Field                  | Type    | Null | Key | Default | Extra |
 +------------------------+---------+------+-----+---------+-------+
