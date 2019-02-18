@@ -2,7 +2,7 @@
 2) USE snalturalasysis;
 3) CREATE TABLE admin (admin_id INTEGER PRIMARY KEY, admin_name TEXT, admin_number INTEGER, admin_email TEXT, admin_department TEXT, admin_password TEXT, course_id INTEGER);
 4) CREATE TABLE course_list (course_id INTEGER PRIMARY KEY, course_name TEXT, course_duration INTEGER, course_category TEXT, number_of_users INTEGER);
-5) CREATE TABLE employee (employee_id INTEGER PRIMARY KEY, employee_name TEXT, employee_mobile_number INTEGER, user_department TEXT, course_taken INTEGER);
+5) CREATE TABLE employee (employee_id INTEGER PRIMARY KEY, employee_name TEXT, employee_mobile_number INTEGER, employee_email TEXT, employee_age INTEGER, employee_gender CHAR, employee_nationality TEXT, employee_designation TEXT, employee_department TEXT, employee_joiningdate TEXT, course_taken INTEGER);
 6) CREATE TABLE course_details (course_id INTEGER PRIMARY KEY, employee_id INTEGER,start_date TEXT, end_date TEXT, current_progress INTEGER);
 7) show tables;   
 +---------------------------+
@@ -49,16 +49,21 @@
 | number_of_users | int(11) | YES  |     | NULL    |       |
 +-----------------+---------+------+-----+---------+-------+
 
-11) describe employee;
+11) describe employee;  
 +------------------------+---------+------+-----+---------+-------+
 | Field                  | Type    | Null | Key | Default | Extra |
 +------------------------+---------+------+-----+---------+-------+
 | employee_id            | int(11) | NO   | PRI | NULL    |       |
 | employee_name          | text    | YES  |     | NULL    |       |
 | employee_mobile_number | int(11) | YES  |     | NULL    |       |
-| user_department        | text    | YES  |     | NULL    |       |
+| employee_email         | text    | YES  |     | NULL    |       |
+| employee_age           | int(11) | YES  |     | NULL    |       |
+| employee_gender        | char(1) | YES  |     | NULL    |       |
+| employee_nationality   | text    | YES  |     | NULL    |       |
+| employee_designation   | text    | YES  |     | NULL    |       |
+| employee_department    | text    | YES  |     | NULL    |       |
+| employee_joiningdate   | text    | YES  |     | NULL    |       |
 | course_taken           | int(11) | YES  |     | NULL    |       |
 +------------------------+---------+------+-----+---------+-------+
-
 
 
