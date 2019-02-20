@@ -7,6 +7,7 @@
 #### Screen Designs
 #### Features
 #### Database Schema
+#### Meetings
 ## Database
 ## Training Management App
 ##### FE
