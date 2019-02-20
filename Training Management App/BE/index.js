@@ -6,6 +6,7 @@ var app = express();
  
 var authenticateController=require('./controllers/authenticate');
 var registerController=require('./controllers/register');
+var addCourseController=require('./controllers/addCourse')
  
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -15,7 +16,7 @@ app.get('/', function (req, res) {
    console.log("GET /");
 })  
  
-app.get('/login.html', function (req, res) {  
+app.get('/login', function (req, res) {  
    //res.sendFile( __dirname + "/" + "login.html" );  
    console.log("GET /login");
 })  
@@ -23,8 +24,10 @@ app.get('/login.html', function (req, res) {
 /* route to handle login and registration */
 app.post('/api/register',registerController.register);
 app.post('/api/authenticate',authenticateController.authenticate);
+app.post('/api/addCourse',addCourseController.addCourse);
  
 console.log(authenticateController);
 app.post('/controllers/register', registerController.register);
 app.post('/controllers/authenticate', authenticateController.authenticate);
+app.post('/controllers/addCourse', addCourseController.addCourse);
 app.listen(3000);
