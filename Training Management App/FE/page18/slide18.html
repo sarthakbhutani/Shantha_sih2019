@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title></title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="slide18.css">
+</head>
+
+<body>
+
+  <!-- Div containing Display Section -->
+	<div class="container">
+    
+    <!-- Course Addition Form -->
+    <h3 class="course-add-h3">Course Addition</h3>
+    <form>
+
+      <!-- Course Name Input -->
+      <div class="form-group row course-add-input-div">
+        <label for="course1" class="col-sm-2 col-form-label">Course Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="course1">
+        </div>
+      </div>
+
+      <!-- Course ID Input -->
+      <div class="form-group row course-add-input-div">
+        <label for="course2" class="col-sm-2 col-form-label">Course ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="course2">
+        </div>
+      </div>
+
+      <!-- Trainer ID Input -->
+      <div class="form-group row course-add-input-div">
+        <label for="course3" class="col-sm-2 col-form-label">Trainer ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="course3" placeholder="Add multiple trainers by using comma">
+        </div>
+      </div>
+      
+      <!--Course Add Button  -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary btn-lg addCourse-button">Add Course</button>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- Course Deletion Form -->
+    <h3 class="course-delete-h3">Course Deletion</h3>
+    <form class="form-inline">
+
+      <!-- Course ID Input -->
+      <div class="form-group course-delete-input-div">
+        <label for="delete1" class="course-delete-label1">Course ID</label>
+        <input type="text" id="delete1" class="form-control mx-sm-3">
+      </div>
+
+     <!-- Course Name Input --> 
+      <div class="form-group course-delete-input-div">
+        <label for="delete2" class="course-delete-label2">Course Name</label>
+        <input type="text" id="delete2" class="form-control mx-sm-3">
+      </div>
+      
+      <!-- Course Delete Button -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary btn-lg deleteCourse-button">Delete Course</button>
+        </div>
+      </div>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
