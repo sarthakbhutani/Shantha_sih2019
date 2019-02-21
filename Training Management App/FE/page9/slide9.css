@@ -1,0 +1,60 @@
+label { 
+  display: inline-block; 
+  width: 210px; 
+  text-align: right;
+  padding-right: 4%;
+  margin-left: -15%; 
+  padding-top: 2%;
+  margin-right: 5%;
+}
+.input
+{
+  box-shadow: 1px 1px;
+  border: 0.5px solid #008faf;
+  border-radius: 6px;
+  height: 30px;
+  width: 30%;
+  margin-top: 10px;
+}
+#Email-input {
+  position: relative;
+  top: 5px;
+  left: 1px;
+  background-color: #01b0f0;
+  border-radius: 6px;
+  height: 30px;
+  color: white;
+}
+#SMS-input {
+  position: relative;
+  top: 5px;
+  left: 40px;
+  background-color: #01b0f0;
+  border-radius: 6px;
+  height: 30px;
+  color: white;
+}
+#page9-outer-div {
+	
+    margin: 100px auto;
+    text-align: center;
+    background-color: #fbfbfb;
+    height: 400px;
+    width: 650px;
+    border-radius: 6px;
+}
+.page9-inner-div
+{
+  background-color: white;
+  height: 50px;
+  width: 600px;
+  margin-left: 25px;
+  border-radius: 6px;
+}
+h1 {
+	text-align: center;
+  padding-bottom: 1%;
+  font-family:  Arial;
+  color: #008faf;
+  padding-top: 2%;
+}
