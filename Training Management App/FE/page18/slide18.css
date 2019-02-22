@@ -1,0 +1,66 @@
+.form-control{
+	width: 50%;
+	border-radius: 6px;
+}
+
+.container{
+	margin: 70px auto;
+	background-color: #fbfbfb;
+	width: 800px;
+	height: 500px;
+	border-radius: 6px;
+}
+
+.addCourse-button
+{
+	width: 200px;
+	margin-left: 300px;
+	background-color: #01b0f0;
+	border-color: #01b0f0;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.deleteCourse-button
+{
+	width: 200px;
+	margin-left: 300px;
+	margin-top: 25px;
+	background-color: red;
+	border-color: red;
+	border-radius: 6px;
+}
+
+.course-add-h3
+{
+	padding-top: 20px;
+	padding-bottom: 15px;
+    color: #008faf;
+}
+
+.course-delete-h3
+{
+	padding-top: 15px;
+    color: #008faf;
+}
+
+.course-add-input-div
+{
+	margin-left: 7px;
+}
+
+.course-delete-input-div
+{
+	padding-top: 15px;
+}
+
+.course-delete-label1
+{
+	margin-left: 25px;
+}
+
+.course-delete-label2
+{
+	padding-left: 20px;
+}
+
