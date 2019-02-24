@@ -1,8 +1,7 @@
 var express=require("express");
 var bodyParser=require('body-parser');
- 
-var connection = require('./models/db');
 var app = express();
+var upload = require("express-fileupload");
  
 var authenticateController=require('./controllers/authenticate');
 var registerController=require('./controllers/register');
@@ -12,14 +11,36 @@ var adminAdd_updateEmployeeController=require('./controllers/admin_AddEmployee')
 var adminDeleteEmployeeController=require('./controllers/admin_DeleteEmployee')
 var adminAddDeleteTrainerController=require('./controllers/admin_AddDeleteTrainer')
 var adminAddDeleteCourseController=require('./controllers/admin_addDeleteCourse')
+var addExcel=require('./controllers/uploadXL')
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', function (req, res) {  
-   //res.sendFile( __dirname + "/" + "index.html" );  
-   console.log("GET /");
-})  
+app.use(upload());
+
+// app.get('/addData', function (req, res) {  
+   // res.sendFile( __dirname + "/" + "index.html" );  
+   // console.log("GET /");
+// })  
+
+app.get('/addData', addExcel.uploadFile);
+app.post('/addData', addExcel.uploaded)
+
+// app.post('/', function(req,res){
+//    if(req.files){
+//       console.log(req.files);
+//       var file = req.files.filename,
+//       filename = file.name;
+//       file.mv("./upload"+filename,function(err){
+//          if(err){
+//             console.log(err);
+//             res.send("Error Occured");
+//          } else {
+//             res.send("File Uploaded");
+//          }
+//       })
+//    } 
+// })
  
 app.get('/login', function (req, res) {  
    //res.sendFile( __dirname + "/" + "login.html" );  
@@ -40,6 +61,7 @@ app.post('/api/addTrainer',adminAddDeleteTrainerController.addTrainer);
 app.post('/api/deleteTrainer',adminAddDeleteTrainerController.deleteTrainer);
 app.post('/api/adminaddCourse',adminAddDeleteCourseController.admin_addCourse);
 app.post('/api/admindeleteCourse',adminAddDeleteCourseController.admin_deleteCourse);
+// app.post('/api/uploadData',addExcel.uploadData);
  
 // console.log(authenticateController);
 app.post('/controllers/register', registerController.register);
@@ -55,4 +77,7 @@ app.post('/controllers/addTrainer',adminAddDeleteTrainerController.addTrainer);
 app.post('/controllers/deleteTrainer',adminAddDeleteTrainerController.deleteTrainer);
 app.post('/controllers/adminaddCourse',adminAddDeleteCourseController.admin_addCourse);
 app.post('/controllers/admindeleteCourse',adminAddDeleteCourseController.admin_deleteCourse);
-app.listen(3001);
+// app.post('/controllers/uploadData',addExcel.uploadData);
+
+
+app.listen(3000);
