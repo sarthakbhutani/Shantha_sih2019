@@ -3,18 +3,23 @@
 	border-radius: 6px;
 }
 
+.jumbotron
+{
+	background-color: #fbfbfb;
+	border-radius: 6px;
+	height: 600px;
+}
+
 .container{
 	margin: 70px auto;
-	background-color: #fbfbfb;
-	width: 800px;
-	height: 500px;
-	border-radius: 6px;
+	width: 900px;
+	
 }
 
 .addCourse-button
 {
 	width: 200px;
-	margin-left: 300px;
+	margin-left: 350px;
 	background-color: #01b0f0;
 	border-color: #01b0f0;
 	border-radius: 6px;
@@ -24,7 +29,7 @@
 .deleteCourse-button
 {
 	width: 200px;
-	margin-left: 300px;
+	margin-left: 350px;
 	margin-top: 25px;
 	background-color: red;
 	border-color: red;
@@ -33,7 +38,6 @@
 
 .course-add-h3
 {
-	padding-top: 20px;
 	padding-bottom: 15px;
     color: #008faf;
 }
@@ -63,4 +67,3 @@
 {
 	padding-left: 20px;
 }
-

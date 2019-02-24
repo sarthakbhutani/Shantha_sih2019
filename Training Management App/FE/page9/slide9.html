@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="slide9.css">
+  <title></title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="slide9.css">
 </head>
+
 <body>
-<div id="page9-outer-div">
-	<h1>Alert Trainee</h1>
-	<form>
-	 <div class="page9-inner-div">
-		<label for="emp">Employee ID</label>
-		<input name ="empId" id="emp" type ="text" class="input" required>
-	 </div>
-	 <br>
-	 <br>
-	  <div class="page9-inner-div">
-	  	<label for="course">Course ID</label>
-		<input name ="courseId" id="course" type ="text" class="input" required>
-       </div>
-        <br>
-	 <br>
-	  <div class="page9-inner-div">
-	  	<label for="test">Test No.</label>
-		<input name ="testNo" id="test" type ="text" class="input" required>
-       </div><br><br>
-          <button type="submit" id="Email-input">Send Email</button>
-          <button type="submit" id="SMS-input">Send SMS</button>
-      </form>
+
+  <!-- Div containing Display Section -->
+  <div class="container">
+    <div class="jumbotron">
+    
+    <!-- Alert Form -->
+    <h1 class="font-weight-bold">Alert Trainee</h3>
+    <form>
+
+      <!-- Employee Id Input -->
+      <div class="form-group row">
+        <label for="employeeId" class="col-sm-4 col-form-label">Employee ID</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="employeeId" required>
+        </div>
+      </div>
+
+      <!-- Course ID Input -->
+      <div class="form-group row">
+        <label for="courseId" class="col-sm-4 col-form-label">Course ID</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="courseId" required>
+        </div>
+      </div>
+
+      <!-- Test No Input -->
+      <div class="form-group row">
+        <label for="testNo" class="col-sm-4 col-form-label">Test No.</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="testNo" required>
+        </div>
+      </div>
+      
+      <!--Email Button  -->
+      <button type="submit" class="btn btn-primary btn-sm" id="emailButton">Send Email</button>
+
+      <!--SMS Button -->      
+      <button type="submit" class="btn btn-secondary btn-sm" id="smsButton">Send SMS</button>
+
+    </form>
   </div>
+
+</div>
+
 </body>
+
 </html>
