@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title></title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="slide17.css">
+</head>
+
+<body>
+
+  <!-- Div containing Display Section -->
+  <div class="container">
+    <div class="jumbotron">
+    
+    <!-- Trainer Addition Form -->
+    <h3 class="trainer-add-h3">Trainer Account Addition</h3>
+    <form class="form-inline">
+
+      <!-- Name Input -->
+      <div class="form-group add-input-div1">
+        <label for="trainerName" id="add-label1">Name</label>
+        <input type="text" id="trainerName" class="form-control mx-sm-3" required>
+      </div>
+
+     <!-- Contact No. Input --> 
+      <div class="form-group add-input-div2">
+        <label for="trainerContactNo" id="add-label2">Contact No.</label>
+        <input type="text" id="trainerContactNo" class="form-control mx-sm-3" required>
+      </div>
+      
+      <!-- Email ID Input -->
+      <div class="form-group add-input-div3">
+        <label for="trainerEmailId" id="add-label3" ">Email ID</label>
+        <input type="text" id="trainerEmailId" class="form-control mx-sm-3" required>
+      </div>
+
+     <!-- Password Input --> 
+      <div class="form-group add-input-div4">
+        <label for="trainerPassword" id="add-label4">Password</label>
+        <input type="text" id="trainerPassword" class="form-control mx-sm-3" required>
+      </div>
+      
+      <!-- Department drop down -->
+      <div class="con">
+      <div class="input-group mb-3">
+		  <select class="custom-select" id="inputGroupSelect02">
+		    <option selected>Department</option>
+		    <option value="1">R&D</option>
+		    <option value="2">Manufacturing</option>
+		    <option value="3">Shiping</option>
+		  </select>
+	   </div>
+
+      <!-- Trainer Addtion Button -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary btn-lg addTrainer-button">Submit & Email</button>
+        </div>
+      </div>
+  </div>
+
+    </form>
+
+    <!-- Tainer Deletion Form -->
+    <h3 class="trainer-delete-h3">Trainer Account Deletion</h3>
+    <form class="form-inline">
+
+      <!-- Email ID Input -->
+      <div class="form-group delete-input-div">
+        <label for="email" id="delete-label1">Email ID</label>
+        <input type="text" id="email" class="form-control mx-sm-3" required>
+      </div>
+      
+      <!-- Trainer Delete Button -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary btn-lg deleteTrainer-button">Delete Account</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+</body>
+
+</html>

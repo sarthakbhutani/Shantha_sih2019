@@ -1,0 +1,119 @@
+.form-control{
+  width: 50%;
+  border-radius: 6px;
+}
+
+.jumbotron
+{
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  height: 600px;
+}
+
+.container{
+  margin: 70px auto;
+  width: 900px;
+  
+}
+
+.addTrainer-button
+{
+  width: 200px;
+  margin-left: 350px;
+  margin-top: 50px;
+  background-color: #01b0f0;
+  border-color: #01b0f0;
+  border-radius: 6px;
+}
+
+.deleteTrainer-button
+{
+  width: 200px;
+  margin-left: 350px;
+  margin-top: 25px;
+  background-color: red;
+  border-color: red;
+  border-radius: 6px;
+}
+
+
+.trainer-add-h3
+{
+  padding-top: 15px;
+    color: #008faf;
+}
+
+.trainer-delete-h3
+{
+  padding-top: 15px;
+    color: #008faf;
+}
+
+.add-input-div1
+{
+  padding-top: 15px;
+}
+
+.add-input-div2
+{
+  padding-top: 15px;
+  margin-left: 60px;
+}
+
+.add-input-div3
+{
+  padding-top: 15px;
+}
+
+.add-input-div4
+{
+  padding-top: 15px;
+  margin-left: 60px;
+}
+
+.delete-input-div
+{
+  padding-top: 15px;
+}
+
+#add-label1
+{
+  margin-left: 25px;
+  padding-right: 18px;
+}
+
+#add-label2
+{
+  padding-left: 19px;
+  margin-right: -14px;
+  padding-right: 10px;
+}
+
+#add-label3
+{
+  margin-left: 25px;
+}
+
+#add-label4
+{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+#delete-label1
+{
+  margin-left: 25px;
+}
+.con{
+  position:relative;
+}
+#inputGroupSelect02{
+  position: absolute;
+  top: 100%; /* Bottom of button */
+  right: 0;
+  width:800px;
+  left: 20px;
+  margin-top: 2%;
+  margin-bottom:1%;
+  border-radius: 6px;
+}
