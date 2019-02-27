@@ -12,6 +12,8 @@ var adminDeleteEmployeeController=require('./controllers/admin_DeleteEmployee')
 var adminAddDeleteTrainerController=require('./controllers/admin_AddDeleteTrainer')
 var adminAddDeleteCourseController=require('./controllers/admin_addDeleteCourse')
 var addExcel=require('./controllers/uploadXL')
+var newsController = require("./controllers/newsController");
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -78,6 +80,9 @@ app.post('/controllers/deleteTrainer',adminAddDeleteTrainerController.deleteTrai
 app.post('/controllers/adminaddCourse',adminAddDeleteCourseController.admin_addCourse);
 app.post('/controllers/admindeleteCourse',adminAddDeleteCourseController.admin_deleteCourse);
 // app.post('/controllers/uploadData',addExcel.uploadData);
+// NewsAPI
+app.use("/news", newsController);
 
-
-app.listen(3000);
+app.listen(3000, () => {
+   console.log("Server has started");
+ });
