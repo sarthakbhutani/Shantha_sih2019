@@ -1,0 +1,274 @@
+h1{
+  text-align: center;
+  padding-bottom: 1%;
+  font-family:  Arial;
+  padding-top: 8%;
+  color: dimgray;
+  /* background: rgb(136, 185, 224) */
+}
+h2{
+  text-align: center;
+  padding-bottom: 1%;
+  font-family:  Arial;
+
+  padding-top: 15%;
+  color: dimgray;
+
+}
+h3{
+    text-align: center;
+    padding-left: 4%;
+  color: #000000;
+  background: white
+}
+body > header {
+    text-align: center;
+  background: ghostwhite
+}
+h3{
+  text-align: center;
+  padding-bottom: 1%;
+  font-family:  Arial;
+  color: #008faf;
+  padding-top: 2%;
+}
+
+
+/* TEXT INPUT BOX CUSTOMISATION */
+
+
+input[type=text] {
+  margin-top: 8px;
+  padding: 0;
+  height: 28px;
+  position: relative;
+  outline: none;
+  border: 1px solid #c0bebe;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+/* TEXT INPUT BOX CUSTOMISATION */
+
+input[type=date] {
+  margin-top: 8px;
+  height: 28px;
+  position: relative;
+  outline: none;
+  border: 1px solid #c0bebe;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+
+
+.button{
+  background-color: rgb(33, 132, 212);
+  border: none;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+
+.submitButton{
+  width: 41%;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.enterButton{
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 2%;
+}
+
+.inputLabelText{
+  display: block;
+  position: relative;
+  font-size: 20;
+  font-family:  Arial;
+  color: #008faf;
+}
+
+table{
+  width: 80%;
+}
+
+td {
+  height: 60px;
+  /* border: 1px solid black; */
+}
+
+/* ------ATTENDANCE SLIDE 1 ---------------*/
+
+.horizontalDiv{
+  display: inline;
+  margin: 0 1em 0 1em;
+}
+
+.slide1FormText{
+  background: ghostwhite;
+  padding: 50px;
+  padding-left:  39%;
+  padding-right: 20%
+  font-family:  Arial;
+  color: #008faf;
+}
+
+.attendLabelText{
+  display: inline;
+  position: relative;
+  background: ghostwhite;
+  padding: 0;
+  margin: 5px;
+  font-size: 20;
+  font-family:  Arial;
+  color: dimgray;
+}
+.attendLabelText input{
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin-left: 40px;
+}
+.customRadioButton{
+  position: absolute;
+  top: 0;
+  left: 65%;
+  height: 20px;
+  width: 20px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+.attendLabelText:hover input ~ .customRadioButton {
+  background-color: #ccc;
+}
+
+.attendLabelText input:checked ~ .customRadioButton {
+  background-color: #2196F3;
+}
+.customRadioButton:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.attendLabelText input:checked ~ .customRadioButton:after {
+  display: block;
+}
+
+/* after making selection */
+.attendLabelText .customRadioButton:after {
+  left: 6px;
+  top: 4px;
+  width: 5px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* --------- SLIDE 4 --------- */
+
+
+
+
+.slide4FormText{
+  background: ghostwhite;
+  /* padding: 50px; */
+  padding-bottom:2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left:  20%;
+  padding-right: 15%;
+  font-family:  Arial;
+  color: #008faf;
+}
+
+.customSelectMenu{
+  width: 93;
+  position: relative;
+  font-family: Arial;
+  padding-right: 80%;
+}
+
+.customSelectMenu select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  /* border-bottom-right-radius: 2px; */
+  background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: relative;
+  content: "";
+  left: 45%;
+  top: 4px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 0px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color:black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: black;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  width: 92px;
+  position: absolute;
+  background-color: white;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
