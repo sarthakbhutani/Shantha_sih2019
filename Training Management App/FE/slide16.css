@@ -1,0 +1,65 @@
+.form-control{
+	width: 50%;
+	border-radius: 6px;
+}
+
+.jumbotron
+{
+	background-color: #fbfbfb;
+	border-radius: 6px;
+	height: 600px;
+}
+
+.container{
+	margin: 70px auto;
+	width: 900px;
+
+}
+
+.GetId-button
+{
+	width: 200px;
+	margin-left: 350px;
+	background-color: #01b0f0;
+	border-color: #01b0f0;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.deleteEId-button
+{
+	width: 200px;
+	margin-left: 350px;
+	margin-top: 25px;
+	/* background-color: red;
+	border-color: red; */
+	color: red;
+	border-radius: 6px;
+}
+
+.employee-delete-h3
+{
+	padding-bottom: 15px;
+    color: #008faf;
+}
+
+.Eid-delete-h3
+{
+	padding-top: 15px;
+    color: #008faf;
+}
+
+.employee-delete-input-div
+{
+	margin-left: 7px;
+}
+
+.Eid-delete-input-div
+{
+	padding-top: 15px;
+}
+
+.Eid-delete-label1
+{
+	margin-left: 25px;
+}
