@@ -1,0 +1,47 @@
+
+
+.jumbotron
+{
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  height: 600px;
+}
+
+.container{
+  margin: 70px auto;
+  width: 900px;
+  
+}
+
+.form-control
+{
+  width: 200px;
+  border-radius: 6px; 
+}
+
+.drop-label
+{
+  padding-left: 30px;
+}
+
+.my-1
+{
+  margin-left: 30px;
+}
+
+.btn 
+{
+  margin-left: 60px;
+}
+
+.drop-div
+{
+  padding-top: 30px;
+}
+
+.btn
+{
+  width: 150px;
+  background-color: #01b0f0;
+  border-color: #01b0f0;
+}
