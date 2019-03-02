@@ -1,0 +1,257 @@
+<!-- look for HERE tags while creating js -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<title>Partial</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"   
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+</head>
+<body>
+       <nav class="navbar">
+           <div class="container-fluid jai">
+               <div class="navbar-header navbar-brand">
+                   <a class="logo">
+                       <img  src="../images/snalturalysis_logo.png" alt="company logo" class="snaltureLogo" width="11%" >
+                   </a>
+                   <!-- <span class="nameOfUser">{{nameOfuser}}</span> -->
+                   <a class= "logo">
+                    <img src="../images/shantha_logo.jpg" class="compLogo">
+                   </a>
+                   <a class="navbar-right">
+                   <!-- <p class="userName"><b>{{username}}</b></p> -->
+                   <!-- FETCH USERNAME : HERE -->
+                   <a href="#"><img src="../images/logout.png" class="logOut">Log out
+                      </a>
+               </div>
+               
+           </div>
+       </nav>
+       <!-- class="navIcons" -->
+       <div class="wrapper">
+           <!-- Sidebar Holder -->
+           <nav id="sidebar">
+               <ul class="list-unstyled components">
+                   <li class="active">
+                       <!-- Enter Code Here  href-->
+                       <a href="">
+                        <img class="navIcons" src="../images/add_employee.png"> &nbsp;
+                           Add Employee
+                       </a>
+                   </li>
+                   <li><!-- Enter Code Here  href-->
+                    <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/delete_employee.png"> &nbsp;
+                        Update Employee
+                       </a>
+                   </li>
+                   <li><!-- Enter Code Here  href-->
+                    <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/update_employee.png"> &nbsp;
+                        Delete Employee
+                       </a>
+                   </li>
+                   <!-- adding more elements -->
+                   <li><!-- Enter Code Here  href-->
+                    <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/trainer_account.png">&nbsp;
+                        Trainer Management
+                       </a>
+                   </li>
+                   <li><!-- Enter Code Here  href-->
+                    <a href="">
+                    <!-- <span class="glyphicon">&#x270f;</span> -->
+                    <img class="navIcons" src="../images/course_management.png">&nbsp;
+                                       Course Management
+                   </a>
+                </li>
+           </nav>
+            
+        <style>
+body {
+  margin: 500;
+  padding: 0;
+  overflow-x: hidden;
+}
+    .clear{
+        clear: both;
+        margin-bottom: 15px;
+    }
+    #courseAdd2 .abt21{
+        padding: 10px;
+        text-align: center;
+    }
+    #courseAdd2 h3{
+        text-align: left;
+        color: dimgrey;
+        padding: 5px 0;
+        margin: 50px 0;
+    }
+    #courseAdd2 input{
+    border-radius: 5px;
+    text-align: center;
+        margin:  auto 30px 10px;
+        padding: 5px 2px;
+        max-width:300px;
+        background: white;
+        border:1px solid black;
+}
+    #courseAdd2 label{
+        color : black;
+        margin: auto;
+        font-size:18px;
+        font-weight: 600;
+    }
+    @media(max-width:570px){
+        #courseAdd2 button{
+            display :block;
+            text-align: center;
+            margin: 10px auto auto auto ;
+        }
+        #courseAdd2 label, #courseAdd2 input{
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    #courseAdd2{
+        background: #f4f4f5;
+        text-align: center;
+        padding: 100px;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    #courseAdd2 button{
+        margin: 30px auto 10px;
+        background-color: #00a8ab;
+        padding: 15px 32px;
+        text-decoration: inherit;
+  display: inline-block;
+    }
+    #courseAdd2 .redc{
+        color: orange;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    #courseAdd2 .greenc{
+        color: green;
+         display: block;
+        text-align: center;
+        margin: auto;
+    }
+    
+</style>
+  </head>
+  <body>
+    <div id="courseAdd2">
+      <div class="container">
+        <h3>Employee Addition</h3>
+        <div class="abt21">
+        <div class="row">
+            <div class="col-md-6">
+                <table>
+                    <tr>
+        <td><label> Employee Name</label></td>
+        <td><input type="text" placeholder=" " /></td>
+        
+    </tr>
+    <tr>
+        <td><label> Date of birth</label>
+</td>
+        <td><input type="text" placeholder=" " /></td>
+        
+    </tr>
+    <tr>
+        <td><label> Address </label>
+</td>
+        <td><input type="text" placeholder=" " /></td>
+        
+    </tr>
+    <tr>
+        <td><label> Contact no.</label>
+</td>
+        <td><input type="text" placeholder=" " /></td>
+       
+    </tr>
+    <tr>
+        <td><label>Govt. ID Type</label></td>
+        <td><input type="text" placeholder=" " /></td>
+         </tr>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table>
+
+         <tr>
+        <td> <label>Age</label></td>
+            <td><input type="text" placeholder=" " /></td>     
+             
+         </tr>
+         <tr>
+         <td><label>Designation</label></td> 
+          <td><input type="text" placeholder=" " /></td>           
+         </tr> 
+         <tr>
+        <td><label> Gender</label></td> 
+        <td><input type="text" placeholer=" " /></td>    
+         </tr>
+         <tr>
+         <td><label>Department</label></td>
+         <td><input type="text" placeholder=" " /></td>
+         
+         </tr>
+         <tr>
+        <td><label> Govt. ID no.</label></td> 
+            <td><input type="text" placeholder=" " /></td>    
+               </tr>
+         
+</table>
+            </div>
+        </div>
+        
+        
+        
+        
+
+          <button class="button">Submit</button>
+          <span class="redc">Please fill All the details</span>
+          <span class="greenc">Employee Id : XXXXXXX generated</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+            
