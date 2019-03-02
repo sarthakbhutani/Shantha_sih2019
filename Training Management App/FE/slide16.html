@@ -20,7 +20,7 @@
 
     <!-- Course Addition Form -->
     <h3 class="delete-employee-h3">Employee Deletion</h3>
-    <form>
+    <form method="post" action="/employeeDeletion">
 
       <!-- Employee Name Input -->
       <div class="form-group row employee-delete-input-div">
@@ -49,7 +49,7 @@
       <!--Get ID Button  -->
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary btn-lg GetId-button">GetId</button>
+            <input type="submit" value="Get ID">
         </div>
       </div>
 
@@ -62,7 +62,7 @@
       <!-- Employee ID Input -->
       <div class="form-group EId-delete-input-div">
         <label for="EmployeeId" class="EId-delete-label1">Employee ID</label>
-        <input type="text" id="EmployeeId" class="form-control mx-sm-3" required>
+        <input type="text" id="employeee" class="form-control mx-sm-3" required>
       </div>
 
 
@@ -78,7 +78,16 @@
   </div>
 
 </div>
-
+<script type="text/javascript">
+  let url="http://localhost:8001/test";
+  fetch(url).then(response => response.json())
+  .then( (result) => {
+      console.log('success:', result)
+      let div=document.getElementById('employeee');
+      div.innerHTML=``;
+  })
+  .catch(error => console.log('error:', error));
+</script>
 </body>
 
 </html>

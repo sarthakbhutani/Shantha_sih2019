@@ -20,8 +20,8 @@
     
     <!-- Trainer Addition Form -->
     <h3 class="trainer-add-h3">Trainer Account Addition</h3>
-    <form class="form-inline">
-
+   
+        <form method="post" class="form-inline" action="/trainerAddition">
       <!-- Name Input -->
       <div class="form-group add-input-div1">
         <label for="trainerName" id="add-label1">Name</label>
@@ -53,14 +53,15 @@
 		    <option selected>Department</option>
 		    <option value="1">R&D</option>
 		    <option value="2">Manufacturing</option>
-		    <option value="3">Shiping</option>
+		    <option value="3">Shipping</option>
 		  </select>
 	   </div>
 
       <!-- Trainer Addtion Button -->
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary btn-lg addTrainer-button">Submit & Email</button>
+            <input type="submit" value="Submit & Email"     class="btn btn-primary btn-lg addTrainer-button">
+          
         </div>
       </div>
   </div>
@@ -69,7 +70,7 @@
 
     <!-- Tainer Deletion Form -->
     <h3 class="trainer-delete-h3">Trainer Account Deletion</h3>
-    <form class="form-inline">
+    <form method="post" class="form-inline" action="/trainerDeletion">
 
       <!-- Email ID Input -->
       <div class="form-group delete-input-div">
@@ -80,7 +81,8 @@
       <!-- Trainer Delete Button -->
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary btn-lg deleteTrainer-button">Delete Account</button>
+            <input type="submit" value="Delete Account"     class="btn btn-primary btn-lg deleteTrainer-button">
+  
         </div>
       </div>
 
