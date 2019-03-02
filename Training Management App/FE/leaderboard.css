@@ -179,7 +179,7 @@ Leaderboard
   top: -9px;
   bottom: auto;
   border-top: none;
-  border-bottom: 8px solid #993639;
+  border-bottom: 8px solid #0090af;
 }
 .leaderboard ol li:hover {
   z-index: 2;
