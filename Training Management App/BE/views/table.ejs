@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+   
+        $.ajax({
+                 type: "POST",
+                 url: urlPath,
+                 success: function(data)
+                 {
+                     helpers.buildDropdown(
+                         jQuery.parseJSON(data),
+                         $('#dropdown'),
+                         'Select an option'
+                     );
+                 }
+             });
+        
+        
+             var helpers =
+     {
+         buildDropdown: function(result, dropdown, emptyMessage)
+         {
+             // Remove current options
+             dropdown.html('');
+             // Add the empty option with the empty message
+             dropdown.append('<option value="">' + emptyMessage + '</option>');
+             // Check result isnt empty
+             if(result != '')
+             {
+                 // Loop through each of the results and append the option to the dropdown
+                 $.each(result, function(k, v) {
+                     dropdown.append('<option value="' + v.id + '">' + v.name + '</option>');
+                 });
+             }
+         }
+     }
+        
+        
+        
+        
+        
+        </script>
+     
+</head>
+<body>
+
+        <div>
+                <h1>Employee Selection for Course</h1>
+                <form>
+                    <select id="dropdown"></select>
+            
+            
+                    <label>Start Date</label>
+                    <input type="date" name="Start_Date"><br>
+            
+                    <label>Filter</label> 
+                    <input type="button" value="All">
+                    <input type="button" value="Manufacturing">
+                    <input type="button" value="Production">
+                    <input type="button" value="Shipping">
+    <table border="1" cellpadding="7" cellspacing="7">
+        <tr>
+          <th width="50px">No</th>
+          <th>Employee_ID</th>
+          <th>Name</th>
+          <th>Field</th>
+          <th>Selection</th>
+        </tr>
+        <% if(data.length){ 
+          for(var i = 0;i < data.length;i++) { %>
+        <tr>
+          <td><%=(i+1)%></td>
+          <td><%=data[i].Employee_ID%></td>
+          <td><%=data[i].Name%></td>
+          <td><%=data[i].Field%></td>
+          <td> <input type="checkbox" name="vehicle1" value="checkbox"></td>
+        </tr>
+        <% }
+        }else{ %>
+        <tr>
+          <td colspan="3">No user</td>
+        </tr>
+      <% } %>
+      </table>
+
+
+
+
+
+      
+		<input type="submit" name="Submit">
+	</form>
+</div>
+</body>
+</html>
