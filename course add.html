@@ -1,0 +1,198 @@
+
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../css/trainer.css">
+	<title>Partial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+      <style>
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+    .clear{
+        clear: both;
+        margin-bottom: 15px;
+    }
+    #courseAdd2 .abt21{
+        background: #f4f4f5;
+        padding: 2px;
+        
+        text-align: center;
+        margin: 100px;
+    }
+    #courseAdd2 h3{
+        text-align: center;
+        color: dimgrey;
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+    #courseAdd2 input{
+    border-radius: 5px;
+    text-align: center;
+        margin:  auto 30px 10px;
+        padding: 5px 2px;
+        max-width:400px;
+}
+    #courseAdd2 label{
+        color : black;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    @media(max-width:650px){
+        #courseAdd2 button{
+            display :block;
+            text-align: center;
+            margin: 10px auto auto auto ;
+        }
+        #courseAdd2 label, #courseAdd2 input{
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        
+    }
+    
+</style>
+  </head>
+      <body>
+       
+       <nav class="navbar">
+           <div class="container-fluid jai">
+               <div class="navbar-header navbar-brand">
+                   <a class="logo">
+                       <img src="../images/snalturalysis_logo.png" alt="company logo" class="snaltureLogo" width="11%" >
+                   </a>
+                   <!-- <span class="nameOfUser">{{nameOfuser}}</span> -->
+                   <a class= "logo">
+                    <img src="../images/shantha_logo.jpg" class="compLogo">
+                   </a>
+                   <a class="navbar-right">
+                   <!-- <p class="userName"><b>{{username}}</b></p> -->
+                   <!-- FETCH USERNAME : HERE -->
+                   <a href="#"><img src="../images/logout.png" class="logOut">Log out
+                      </a>
+               </div>
+               
+           </div>
+       </nav>
+       <!-- class="navIcons" -->
+       <div class="wrapper">
+           <!-- Sidebar Holder -->
+           <nav id="sidebar">
+               <ul class="list-unstyled components">
+<!-- Enter Code Here  href-->
+                   <li class="active"><a href="">
+                        <img class="navIcons" src="../images/import.png"> &nbsp;
+                           Database Upload
+                       </a>
+                   </li>
+                   <li>
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/attendance.png"> &nbsp;
+                           Employee Attendance
+                       </a>
+                   </li>
+                   <li>
+                       <!-- Enter Code Here  href-->
+                       <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/search.png"> &nbsp;
+                           Search Employee
+                       </a>
+                   </li>
+                   <li>
+                       <!-- Enter Code Here  href-->
+                       <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/add_delete.png">&nbsp;
+                           Employee Add/Delete
+                       </a>
+                   </li>
+
+                   <!-- adding more elements -->
+                   <li>
+                       <!-- Enter Code Here  href-->
+                       <a href="">
+                        <!-- <span class="glyphicon">&#x270f;</span> -->
+                        <img class="navIcons" src="../images/results.png">&nbsp;
+                        Test Results
+                       </a>
+                   </li>
+                   <li>
+                       <!-- Enter Code Here  href-->
+                       <a href="">
+                    <!-- <span class="glyphicon">&#x270f;</span> -->
+                    <img class="logOut" src="../images/report_generation.png">&nbsp;         
+                    Report Generation
+
+                   </a>
+                </li>
+                <li>
+                    <!-- Enter Code Here  href-->
+                    <a href="">
+                    <!-- <span class="glyphicon">&#x270f;</span> -->
+                    <img class="navIcons" src="../images/faq-button.png"> &nbsp;
+                    FAQ’s
+
+                   </a>
+               </li>                   <li>
+                   <!-- Enter Code Here  href-->
+                   <a href="">
+                <!-- <span class="glyphicon">&#x270f;</span> -->
+                <img class="navIcons" src="../images/update.png">
+                Latest Updates
+               </a>
+           </li>
+
+               </ul>
+           </nav>
+         
+  <body>
+    <div id="courseAdd2" style="width : 100%">
+      <div class="container">
+        <div class="abt21">
+           <h3> Course Addition</h3>
+            <label> Course Id</label><br>
+            <input type="text" placeholder=" " style="width : 70%"/><br>
+            <label>Course Addition Date</label><br>
+            <input type="text" placeholder=" "style="width : 70%" /><br>
+            <label> Duration</label><br>
+            <input type="text" placeholder=" " style="width : 70%"/><br>
+            <button class="btn btn-primary"style="width : 25%; margin-bottom: 2%">Submit</button>
+                  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  
+
+    
+
+
+    
