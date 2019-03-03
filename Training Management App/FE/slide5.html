@@ -1,5 +1,14 @@
 <html>
 <head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -134,29 +143,98 @@
               </div>
 
 
-
-
-
-
         </div>
         <div class="content-bottom">
             <div class="container-fluid">
                 <div class="row" style="padding-left : 20%; width : 100%">
                     <div class="col-lg-3 col-md-3 col-sm-12 box">
                         <span>Attendance Matrix</span>
-                       <img src="https://cdn-images-1.medium.com/max/1200/1*CPSTzfUTCCpUbllyiPvl_A.jpeg" height="10%" width="10%">
-<!-- 
+
+                        <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
+                        <script>
+                     new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["1st", "2nd", "3rd"],
+      datasets: [
+        {
+          label: "Attendance",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+          data: [151,142,148]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: false,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+                        </script>
+                        <!-- 
                        <iframe src="slide1.html" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe> -->
                     </div>
                     <div class="col-lg-3 col-md-3 box col-sm-12">
                                             <span>Course Completion</span>
-                                            <img src="https://static1.squarespace.com/static/56fd706140261df95349d4bd/56fd81e560b5e9e77a90bac4/5854cad9b8a79bad1f8cdd3a/1483786201085/Donut+Chart.png?format=750w"   height=10% width=10%>                                    
-                        
+                                            <!-- <img src="https://static1.squarespace.com/static/56fd706140261df95349d4bd/56fd81e560b5e9e77a90bac4/5854cad9b8a79bad1f8cdd3a/1483786201085/Donut+Chart.png?format=750w"   height=10% width=10%>                                     -->
+                                            
+                                            <canvas id="doughnut-chart" width="120" height="100"></canvas>
+                                            <script>
+                                            new Chart(document.getElementById("doughnut-chart"), {
+   type: 'doughnut',
+   data: {
+     labels: ["Completed", "Not Completed"],
+     datasets: [
+       {
+         label: "Course Completion %",
+         backgroundColor: ["#3e95cd", "#8e5ea2"],
+         data: [64,36]
+       }
+     ]
+   },
+   options: {
+     title: {
+       display: false,
+       text: 'Predicted world population (millions) in 2050'
+     }
+   }
+});
+                                            
+                                            
+                                            
+                                            </script>
+                                            
                                         </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 box">
                                                 <span>Course Result</span>
-                                                <img src="https://static1.squarespace.com/static/56fd706140261df95349d4bd/56fd81e560b5e9e77a90bac4/5854cad9b8a79bad1f8cdd3a/1483786201085/Donut+Chart.png?format=750w"   height=10% width=10%>                                    
-                                            
+                                                <!-- <iframe src="courseresultchart.html" style=" display:block; width: 10%;height: 10%; margin: 0 auto;"name="frame2" id="frame2" allowtransparency="false"></iframe>                                             -->
+                                                <canvas id="doughnut-chart1" width="120" height="100"></canvas>
+                                             <script>
+                                             new Chart(document.getElementById("doughnut-chart1"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Passed", "Failed"],
+      datasets: [
+        {
+          label: "Passing %",
+          backgroundColor: ["#3e95cd", "#8e5ea2"],
+          data: [87,13]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: false,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+                                             
+                                             
+                                             
+                                             </script>
 
                 </div>
             </div>
