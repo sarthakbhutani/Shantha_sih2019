@@ -1,0 +1,1 @@
+This is the project by team Snalturalysis in which I was the backend developer and worked on nodeJS. We built it in SIH2019 and were the top 4 teams for the problem statement.
