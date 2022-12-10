@@ -6,7 +6,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cryptr": "^4.0.2",
-    "express": "^4.14.1",
+    "express": "^4.17.3",
     "express-fileupload": "^1.1.9",
     "jsonwebtoken": "^8.4.0",
     "mysql": "^2.13.0",
